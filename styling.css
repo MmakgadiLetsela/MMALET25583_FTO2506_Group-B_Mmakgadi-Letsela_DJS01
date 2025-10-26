@@ -31,5 +31,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+}
+/* ================
+   Main Content
+================ */
+
+.filter-nav{
+    display: flex;
+    flex-direction: row;
+
 }

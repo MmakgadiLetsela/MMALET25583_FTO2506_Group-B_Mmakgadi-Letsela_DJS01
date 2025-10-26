@@ -21,31 +21,33 @@
             <h4 class="filter-heading">
                 Filter by:
             </h4>
-            <select name="genres" id="genre-filter" class="filter-select">
-                <option value="all">All Genres</option>
-                <option value="comedy">Comedy</option>
-                <option value="news">News</option>
-                <option value="sports">Sports</option>
-                <option value="technology">Technology</option>
-                <option value="health">Health</option>
-                <option value="business">Business</option> 
-                <option value="education">Education</option>
-                <option value="entrepreneurship">Entrepreneurship</option>
-                <option value="true-crime">True Crime</option>
-                <option value="lifestyle">Lifestyle</option>
-                <option value="science">Science</option>
-                <option value="history">History</option>
-                <option value="nature">Nature</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="mystery">Mystery</option>
-            </select>
+            <div class="filters">
+                <select id="genre-filter" class="filter-select">
+                    <option value="all">All Genres</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="news">News</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                    <option value="health">Health</option>
+                    <option value="business">Business</option> 
+                    <option value="education">Education</option>
+                    <option value="entrepreneurship">Entrepreneurship</option>
+                    <option value="true-crime">True Crime</option>
+                    <option value="lifestyle">Lifestyle</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                    <option value="nature">Nature</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="mystery">Mystery</option>
+                </select>
 
-            <select name="last-updated" id="update-filter" class="filter-select">
-                <option value="anytime">Anytime</option>
-                <option value="recent">Recently Updated</option>
-                <option value="popular">Most Popular</option>
-                <option value="newest">Newest</option>
-            </select>
+                <select id="update-filter" class="filter-select">
+                    <option value="anytime">Anytime</option>
+                    <option value="recent">Recently Updated</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="newest">Newest</option>
+                </select>
+            </div> 
         </nav>
         
    
@@ -53,7 +55,9 @@
             <img src="podcast-image.jpg" alt="Podcast Cover" class="podcast-image">
             <div class="podcast-info">
                 <h3 class="podcast-title">Podcast Title</h3>
-                <button class="play-button">▶️ Play Episode</button>
+                <div class="season-counter"></div>
+                <div id="genres" class="genres"></div>
+                <div id="last-updated" class="last-updated"></div>
             </div>
     </main>
 
