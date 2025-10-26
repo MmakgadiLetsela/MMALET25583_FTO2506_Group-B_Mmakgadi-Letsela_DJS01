@@ -36,8 +36,18 @@ body{
    Main Content
 ================ */
 
+/* Filter Navigation */
+
 .filter-nav{
     display: flex;
     flex-direction: row;
 
+}
+.filter-heading, .filters{
+    margin: 1.25rem 1rem 1.25rem 1rem;
+}
+
+.filter-select{
+    border-radius: .625rem;
+    
 }
