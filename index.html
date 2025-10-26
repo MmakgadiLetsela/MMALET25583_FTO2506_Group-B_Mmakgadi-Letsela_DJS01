@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Podcast App</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
     <header class="header">
         <section class="heading">
             <div class="podcast-name">🎙️ My Podcast App</div>
             <div class="search">
-                <input type="text" class="search-input" placeholder="Search podcasts...">
-                <button class="search__button">🔎</button>
+                <button class="search-button">🔎</button>
             </div>
         </section>
+    </header>
+
+    <main class="main-content">
         <nav class="filter-nav">
             <h4 class="filter-heading">
                 Filter by:
@@ -45,8 +48,7 @@
             </select>
         </nav>
         
-    </header>
-    <main class="podcast-grid">
+   
         <section class="podcast-card">
             <img src="podcast-image.jpg" alt="Podcast Cover" class="podcast-image">
             <div class="podcast-info">
