@@ -49,5 +49,24 @@ body{
 
 .filter-select{
     border-radius: .625rem;
+    border-color: lightgrey;
     
+}
+/* Podcast Card Styling */
+
+.podcast-card{
+    background-color: white;
+    border-radius: .625rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 15.625rem;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.podcast-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  padding: 2rem;
 }

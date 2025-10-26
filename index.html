@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Podcast App</title>
     <link rel="stylesheet" href="styling.css">
+    <script defer src="./script.js" type="module"></script>
 </head>
 <body>
     <header class="header">
@@ -50,19 +51,37 @@
             </div> 
         </nav>
         
-   
-        <section class="podcast-card">
-            <img src="podcast-image.jpg" alt="Podcast Cover" class="podcast-image">
-            <div class="podcast-info">
-                <h3 class="podcast-title">Podcast Title</h3>
-                <div class="season-counter"></div>
-                <div id="genres" class="genres"></div>
-                <div id="last-updated" class="last-updated"></div>
-            </div>
-        </section>
-    
+        <div class="podcast-grid" id="podcast-grid">
         
+            <!-- Podcast cards will be dynamically inserted here -->
+        </div>
+
+        <dialog id="podcast-modal" class="modal">
+            <div class="modal-header">
+                <h2 class="podcast-title"></h2>
+                <button type="button" class="close-modal" id="close-modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-content">
+                <img src="" alt="Podcast Cover" class="modal-podcast-image">
+                <div class="modal-podcast-info">
+                    <div id="modal-podcast-description">
+                        <h4>Description:</h4>
+                        <p> id="modal-description-text"></p>
+                    </div>
+                    <div id="modal-genres">
+                        <h4>Genres:</h4>
+                        <p id="modal-genres-text"></p>
+                    </div>
+                    <div id="modal-last-updated"></div>
+                </div>
+            </div>
+        
+        
+        </dialog>
     </main>
+
 
 </body>
 </html>
